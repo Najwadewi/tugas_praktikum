@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Mengatur font yang dipakai dan background halaman */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #280872;
+}
+
+/* Membuat Container menjadi layout flexbox dan kotak login di tengah */
+.container {
+    display: flex;
+    flex-basis: wrap;
+    justify-content: center;
+}
+
+/* Mengatur agar tag input dan select memenuhi container dan tampilan lebih bagus */
+input, select {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+/* Mengatur tampilan tombol submit */
+input[type=submit] {
+    background-color: #280872;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #330b8f;
+    font-weight: bold;
+}
+
+/* Mengatur desain header */
+header {
+    background: #280872;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 70px;
+}
+
+.username {
+    margin-top: 15px;
+}
+
+.username h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Mengatur lebar menu 20% dengan background hitam */
+aside {
+    flex: 20%;
+    background: #222;
+}
+
+/* Mengatur lebar konten utama 80% dengan background putih */
+section.main {
+    flex: 80%;
+    background: #fff;
+    min-height: 530px;
+    padding: 15px 20px;
+    flex-grow: 1;
+}
+
+/* Mengatur footer dengan background abu-abu dan teks di tengah */
+footer {
+    background: #ccc;
+    color: #555;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Mengatur layout pada layar kecil (responsive) */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Navigasi */
+/* Membuang padding tag <ul> */
+.menu {
+    padding: 0;
+}
+
+/* Menambah border bawah tag <li> */
+.menu li {
+    border-bottom: 1px dotted #444;
+}
+
+/* Mengatur desain menu yang dibuat dengan tag a */
+.menu a {
+    display: block;
+    padding: 20px 20px;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Mengganti background menu ketika ditunjuk mouse */
+.menu a:hover {
+    background: #000;
+}
+
+.add-button { 
+    margin-bottom: 20px; 
+    text-align: left; 
+} 
+ 
+.add-button button { 
+    background-color: #28a745; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+} 
+ 
+.add-button button:hover { 
+    background-color: #218838; 
+} 
+ 
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+    background-color: #fff; 
+} 
+ 
+table th, table td { 
+    padding: 10px; 
+    text-align: left; 
+    border-bottom: 1px solid #ddd; 
+} 
+ 
+table th { 
+    background-color: #333; 
+    color: white; 
+} 
+ 
+table img { 
+    border-radius: 4px; 
+} 
+ 
+.edit-btn, .delete-btn { 
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+} 
+ 
+.edit-btn { 
+    background-color: #007bff; 
+    color: white; 
+} 
+ 
+.edit-btn:hover { 
+    background-color: #0056b3; 
+} 
+ 
+.delete-btn { 
+    background-color: #dc3545; 
+    color: white; 
+} 
+ 
+.delete-btn:hover { 
+    background-color: #c82333; 
+} 
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+}
